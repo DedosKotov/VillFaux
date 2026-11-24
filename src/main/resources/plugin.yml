@@ -1,0 +1,21 @@
+name: VillFaux
+version: '1.0.0'
+main: com.example.villfaux.VillFauxPlugin
+api-version: '26.2'
+description: Редкий житель VillFaux с необычными сделками и опасными последствиями.
+
+commands:
+  villfaux:
+    description: Административные команды плагина VillFaux.
+    usage: /villfaux spawn
+    permission: villfaux.admin
+    permission-message: Эта команда доступна только администраторам.
+
+permissions:
+  villfaux.admin:
+    description: Доступ к административным командам VillFaux.
+    default: op
+
+  villfaux.giveegg:
+    description: Разрешает получать и использовать яйцо VillFaux.
+    default: op
